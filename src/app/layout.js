@@ -1,7 +1,5 @@
-
- import "./globals.css";
+import "./globals.css";
 import { Inter } from 'next/font/google';
-import Head from 'next/head';
 import Navbar from "../components/Navbar/Navbar";
 
 const inter = Inter({ subsets: ['latin'] });
@@ -14,16 +12,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <link rel="icon" href="/favicon.png" type="image/x-icon" />
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100;1,700&display=swap" rel="stylesheet" />
-      </Head>
+      </head>
       <body className={inter.className}>
-        <Navbar/>
-        {children}</body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
