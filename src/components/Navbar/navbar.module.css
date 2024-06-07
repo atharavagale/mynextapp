@@ -1,87 +1,84 @@
-/* Navbar.module.css */
-
 .navbar {
     background-color: #37517e;
     height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  
-  .logo {
+}
+
+.logo {
     display: flex;
-  }
-  
-  .profile {
+}
+
+.profile {
     border-radius: 50%;
-  }
-  
-  .txt {
+}
+
+.txt {
     margin-left: 0.7rem;
     font-weight: bold;
-  }
-  
-  .right {
-    display: none; /* Hide by default for small screens */
-  }
-  
-  .right.active {
+}
+
+.right {
+    display: none;
+}
+
+.right.active {
     display: flex;
-  }
-  
-  .right ul {
+}
+
+.right ul {
     display: flex;
     list-style: none;
     color: white;
-  }
-  
-  .right ul li {
+}
+
+.right ul li {
     margin-right: 1rem;
-  }
-  
-  .right ul li a {
+}
+
+.right ul li a {
     color: white;
     text-decoration: none;
-  }
-  
-  .right ul li a:hover {
+}
+
+.right ul li a:hover {
     text-decoration: underline;
     color: red;
-  }
-  .dflex{
+}
+
+.dflex {
     display: flex;
-  }
-  
-  /* Media Query for Small Screens */
-  @media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 700px) {
     .navbar {
-      flex-direction: column; /* Stack items vertically on small screens */
-      height: auto; /* Adjust height automatically */
-      padding: 10px; /* Add padding for better spacing */
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
     }
-  
+
     .logo {
-      margin-bottom: 10px; /* Add space below logo */
+        margin-bottom: 10px;
     }
-  
+
     .txt {
-      margin-left: 0; /* Reset left margin */
-      margin-top: 10px; /* Add top margin */
+        margin-left: 0;
+        margin-top: 10px;
     }
-  
+
     .right {
-      flex-direction: column; /* Stack menu items vertically */
-      align-items: center; /* Center align items */
-      margin-top: 10px; /* Add top margin */
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
     }
-  
+
     .right.active {
-      display: flex; /* Ensure active menu is visible */
+        display: flex;
     }
-  
+
     .right ul li {
-      margin-right: 0; /* Remove right margin */
-      margin-bottom: 8px; /* Add bottom margin between menu items */
+        margin-right: 0;
+        margin-bottom: 8px;
     }
-  }
-  
+}

@@ -4,7 +4,9 @@ import { useState } from 'react';
 
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from './Navbar.module.css'; // Import CSS module
+import styles from './Navbar.module.css'; 
+import RightSubMenu from './RightSubMenu';
+
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -18,7 +20,9 @@ const Navbar = () => {
         <div className={`${styles.txt} ${styles.txtBold} ${styles.margin}`}>JustAtharav</div>
         </div>
       </div>
+      <RightSubMenu isOpen={showMenu} setIsOpen={setShowMenu} />
       <div className={`right ${showMenu ? styles.active : ''}`}>
+
         <ul>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About Me</Link></li>
