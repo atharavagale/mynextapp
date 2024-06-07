@@ -1,5 +1,4 @@
-//
-import Navbar from '../components/Navbar/Navbar'; 
+import Navbar from '../components/Navbar/Navbar';
 import Image from 'next/image';
 
 const Home = () => {
@@ -13,11 +12,10 @@ const Home = () => {
 
   return (
     <>
-      
       <section style={{ display: 'flex', justifyContent: 'space-around', marginTop: '7rem' }}>
         <div style={{ width: '40%' }}>
           <p>My Self <span style={{ color: 'rgb(51, 194, 194)', fontWeight: '800' }}>Atharav</span></p>
-          <p>& I am a Software Developer</p>
+          <p>&amp; I am a Software Developer</p>
           {/* <button className="but" onClick={resume} style={{ backgroundColor: '#635985', color: 'white', fontWeight: '700', borderRadius: '20px', border: 'none', padding: '0.6rem', width: '137px', height: '50px', marginRight: '10px' }}>Download Resume</button>
           <button className="but" onClick={git} style={{ backgroundColor: '#635985', color: 'white', fontWeight: '700', borderRadius: '20px', border: 'none', padding: '0.6rem', width: '137px', height: '50px' }}>GITHUB Profile</button> */}
         </div>
@@ -26,7 +24,7 @@ const Home = () => {
         </div>
       </section>
       <div style={{ color: '#F1FADA', margin: '3rem 5rem', display: 'flex' }}>
-        I'm a CSE undergrad with a passion for Machine Learning, Artificial Intelligence, and Cloud Computing. With expertise in C++, Python, HTML/CSS, JS, SQL I am committed to delivering innovative software solutions that solve complex problems. As a skilled developer, I have completed several successful projects. I'm always looking for opportunities to expand my knowledge and skills.
+        I&apos;m a CSE undergrad with a passion for Machine Learning, Artificial Intelligence, and Cloud Computing. With expertise in C++, Python, HTML/CSS, JS, SQL I am committed to delivering innovative software solutions that solve complex problems. As a skilled developer, I have completed several successful projects. I&apos;m always looking for opportunities to expand my knowledge and skills.
       </div>
       <div style={{ color: 'gray', marginTop: '-2.5rem', marginLeft: '5rem' }}>
         Currently Intern at Website Vikreta.
