@@ -1,6 +1,87 @@
+/* Navbar.module.css */
 
-.maincontainer{
-    height: 40px;
-    width: 100%;
-    background-color: rgb(181, 99, 99);
-}
+.navbar {
+    background-color: #37517e;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  .profile {
+    border-radius: 50%;
+  }
+  
+  .txt {
+    margin-left: 0.7rem;
+    font-weight: bold;
+  }
+  
+  .right {
+    display: none; /* Hide by default for small screens */
+  }
+  
+  .right.active {
+    display: flex;
+  }
+  
+  .right ul {
+    display: flex;
+    list-style: none;
+    color: white;
+  }
+  
+  .right ul li {
+    margin-right: 1rem;
+  }
+  
+  .right ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .right ul li a:hover {
+    text-decoration: underline;
+    color: red;
+  }
+  .dflex{
+    display: flex;
+  }
+  
+  /* Media Query for Small Screens */
+  @media screen and (max-width: 700px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically on small screens */
+      height: auto; /* Adjust height automatically */
+      padding: 10px; /* Add padding for better spacing */
+    }
+  
+    .logo {
+      margin-bottom: 10px; /* Add space below logo */
+    }
+  
+    .txt {
+      margin-left: 0; /* Reset left margin */
+      margin-top: 10px; /* Add top margin */
+    }
+  
+    .right {
+      flex-direction: column; /* Stack menu items vertically */
+      align-items: center; /* Center align items */
+      margin-top: 10px; /* Add top margin */
+    }
+  
+    .right.active {
+      display: flex; /* Ensure active menu is visible */
+    }
+  
+    .right ul li {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 8px; /* Add bottom margin between menu items */
+    }
+  }
+  
