@@ -1,6 +1,3 @@
-// src/app/page.js (or src/app/home.js if you have a different setup)
-
-
 import Image from 'next/image';
 import InteractiveButtons from '../components/InteractiveButtons';
 
@@ -10,7 +7,7 @@ const Home = () => {
       <section style={{ display: 'flex', justifyContent: 'space-around', marginTop: '7rem' }}>
         <div style={{ width: '40%' }}>
           <p style={{fontSize:'45px'}}>My Self <span style={{ color: 'rgb(51, 194, 194)', fontWeight: '1000' }}>Atharav</span></p>
-          <p style={{fontSize:'30px'}}>& I am a Software Developer</p>
+          <p style={{fontSize:'30px'}}>&amp; I am a Software Developer</p>
           <InteractiveButtons />
         </div>
         <div style={{ width: '40%', marginLeft: '20rem' }}>
@@ -24,7 +21,7 @@ const Home = () => {
         </div>
       </section>
       <div style={{ color: '#F1FADA', margin: '3rem 5rem', display: 'flex' }}>
-        I'm a CSE undergrad with a passion for Machine Learning, Artificial Intelligence, and Cloud Computing. With expertise in C++, Python, HTML/CSS, JS, SQL I am committed to delivering innovative software solutions that solve complex problems. As a skilled developer, I have completed several successful projects. I'm always looking for opportunities to expand my knowledge and skills.
+        I&apos;m a CSE undergrad with a passion for Machine Learning, Artificial Intelligence, and Cloud Computing. With expertise in C++, Python, HTML/CSS, JS, SQL I am committed to delivering innovative software solutions that solve complex problems. As a skilled developer, I have completed several successful projects. I&apos;m always looking for opportunities to expand my knowledge and skills.
       </div>
       <div style={{ color: 'gray', marginTop: '-2.5rem', marginLeft: '5rem' }}>
         Currently Intern at Website Vikreta.
